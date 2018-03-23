@@ -2,6 +2,7 @@ from django.shortcuts import render,render_to_response
 from django.views.generic import DetailView,ListView
 from django.template import RequestContext
 import string,random
+from adminlog.models import Guest
 
 # Create your views here.
 def login(request):
