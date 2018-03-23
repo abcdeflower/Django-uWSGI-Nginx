@@ -27,4 +27,6 @@ urlpatterns = [
     path('time/',current_datetime),
     path('class/',Date_View.as_view()),
     path('detail/',include(extra_patterns)),
+    path('login/',include('adminlog.urls'))
+#    path('login/',LoginView.as_view()),
 ]

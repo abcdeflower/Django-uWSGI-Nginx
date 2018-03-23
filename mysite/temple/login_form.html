@@ -1,0 +1,13 @@
+<html>
+
+<body>
+<form action='/login/login-view' method='post'>
+	{% csrf_token %}
+	<input type='text' name='usename'>
+	<input type='text' name='passwod'>
+	<input type='submit' value="Submit">
+</form>
+<p>{{ rlt }}</p>
+</body>
+
+</html>
